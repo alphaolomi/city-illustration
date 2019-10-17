@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 // import $ from "jquery";
-
+// import "../../node_modules/parallax-js/dist/parallax.min.js";
 import { TweenMax, Linear } from "gsap/TweenMax";
 
 class CitySvg extends Component {
@@ -18,7 +18,7 @@ class CitySvg extends Component {
     ];
     this.index = "10";
     // fixme
-    // $(".container").parallax({ scalarX: 5, scalarY: 5 });
+    $(".container").parallax({ scalarX: 5, scalarY: 5 });
     TweenMax.set(this.wheel, { transformOrigin: "50% 50%" });
     TweenMax.to(this.wheel, 100, {
       rotation: "360",
