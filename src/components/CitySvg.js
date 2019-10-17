@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+// todo Fix jquery parallax
+// fixme #1
 // import $ from "jquery";
 // import "../../node_modules/parallax-js/dist/parallax.min.js";
 import { TweenMax, Linear } from "gsap/TweenMax";
@@ -17,8 +19,8 @@ class CitySvg extends Component {
       this.wheel2
     ];
     this.index = "10";
-    // fixme
-    $(".container").parallax({ scalarX: 5, scalarY: 5 });
+    // fixme #2
+    // $(".container").parallax({ scalarX: 5, scalarY: 5 });
     TweenMax.set(this.wheel, { transformOrigin: "50% 50%" });
     TweenMax.to(this.wheel, 100, {
       rotation: "360",
