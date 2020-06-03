@@ -4,9 +4,9 @@
   "private": true,
   "homepage": "http://alphaolomi.github.io/city-illustration",
   "dependencies": {
-    "gsap": "3.2.6",
-    "jquery": "3.5.0",
-    "npm": "6.14.4",
+    "gsap": "3.3.0",
+    "jquery": "3.5.1",
+    "npm": "6.14.5",
     "parallax-js": "3.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -36,6 +36,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "2.2.0"
+    "gh-pages": "3.0.0"
   }
 }
