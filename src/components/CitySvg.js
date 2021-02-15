@@ -1,12 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 
-// todo Fix jquery parallax
-// fixme #1
 // import $ from "jquery";
-// import "../../node_modules/parallax-js/dist/parallax.min.js";
-import { TweenMax, Linear } from "gsap/TweenMax";
+import { TweenMax, Linear } from "gsap";
 
-class CitySvg extends Component {
+class CitySvg extends React.Component {
   componentDidMount() {
     this.houses = [
       this.houseOne,
@@ -19,8 +16,19 @@ class CitySvg extends Component {
       this.wheel2
     ];
     this.index = "10";
-    // fixme #2
+    
     // $(".container").parallax({ scalarX: 5, scalarY: 5 });
+
+    // fix me https://github.com/wagerfield/parallax
+    // 
+    // var scene = document.getElementById('scene');
+    // var parallaxInstance = new Parallax(scene, {
+      // relativeInput: true
+    // });
+
+
+    // parallaxInstance.friction(0.2, 0.2);
+    
     TweenMax.set(this.wheel, { transformOrigin: "50% 50%" });
     TweenMax.to(this.wheel, 100, {
       rotation: "360",
@@ -34,7 +42,7 @@ class CitySvg extends Component {
     console.log(this.houses[index]);
     this.houses[index].classList.toggle("active");
   }
-
+  
   render() {
     return (
       <svg
